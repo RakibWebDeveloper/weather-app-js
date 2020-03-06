@@ -28,9 +28,63 @@
                 <i class="fa fa-sun-o" aria-hidden="true"></i>
                 <strong>Local</strong>Weather
             </a>
-            <span id="date" class="lead">11:00AM | Mar 3, 2018</span>
+            <span id="date" class="lead"><i class="fa fa-calendar mr-2" aria-hidden="true"></i>11:00AM | Mar 3, 2018</span>
         </nav>
         <!-- end navbar -->
+
+        <!-- Weather section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mx-auto weather">
+                    <div class="weather-head">
+                        <h1 class="text-center display-4 my-4" id="location">Dhaka, BD</h1>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-6 description text-center" id="description">
+                                <i id="icon-desc" class="wi wi-owm-200"></i>
+                                <p class="desc">thunderstorm</p>
+                            </div>
+                            <div class="col-6 temperature text-center" id="temperature">
+                                60 <i id="icon-thermometer" class="wi wi-thermometer"></i>
+                            </div>
+                        </div>
+                        <!-- weather body header -->
+                        <div class="weather-body">
+                            <div class="row">
+                                <div class="humidity col-4 text-center">
+                                    <i class="wi wi-raindrop"></i><span> Humidity</span>
+                                </div>
+                                <div class="wind col-4 text-center">
+                                    <i class="wi wi-strong-wind"></i><span> Wind Speed</span>
+                                </div>
+                                <div class="visibility col-4 text-center">
+                                    <i class="fa fa-eye"></i><span> Visibility</span>
+                                </div>
+                            </div>
+                            <!-- weather body data -->
+                            <div class="row">
+                                <div id="humidity" class="humidity-data col-4 text-center">
+                                    75%
+                                </div>
+                                <div id="wind" class="wind-data col-4 text-center">
+                                    34mph
+                                </div>
+                                <div id="visibility" class="degree-data col-4 text-center">
+                                    235
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button class="" id="change-button">Change Location</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- end Weather section -->
     </div>
 </body>
 

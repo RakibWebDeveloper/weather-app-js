@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *,
@@ -20,26 +23,94 @@ body {
     background-repeat: no-repeat;
     margin: 0 auto;
     color: whitesmoke;
+    font-family: "Noto Sans", sans-serif;
 }
+
 .hero {
-    position: absolute;
+    /* position: absolute; */
     min-height: 100vh;
     min-width: 100vw;
     top: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .7);
-    
+    background-color: rgba(0, 0, 0, .6);
+
 }
+
 /* navbar */
 .navbar {
     background-color: rgba(69, 107, 171, 0.171);
 
 }
+
 .navbar a {
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 2.5rem;
 }
+
 #date {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* Weather section */
+.weather {
+    border: 1px solid whitesmoke;
+    margin-top: 10rem;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    color: whitesmoke;
+}
+
+.weather-head {
+    height: 50%;
+}
+
+#icon-desc {
+    font-size: 6rem;
+    /* padding-top: 3rem; */
+    padding: 1rem 0;
+    padding-bottom: 1.8rem;
+}
+
+.weather-body .row {
+    border-top: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    font-size: 1.8rem;
+    /* padding: 1rem 0; */
+}
+.humidity, .wind, .visibility {
+    padding: .5rem 0;
+}
+
+#description {
+	font-size: 1.7rem;
+}
+
+#temperature {
+	font-size: 8rem;
+}
+#icon-thermometer {
+	font-size: 6rem;
+}
+
+#humidity, #wind, #visibility {
+    font-size: 2rem;
+    padding: .8rem 0;
+}
+
+/* Button */ 
+
+#change-button {
+    padding: .7rem 4.9rem 1.1rem 4.9rem;
+    font-size: 1.7rem;
+    background-color: rgba(0, 0, 0, .6);
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: .5rem;
+}
+
+#change-button:active,
+#change-button:focus {
+    outline: none;
 }
