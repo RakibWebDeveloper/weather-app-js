@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url('../img/city_vector.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+.hero {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    
+}
+/* navbar */
+.navbar {
+    background-color: rgba(69, 107, 171, 0.171);
+
+}
+.navbar a {
+    color: whitesmoke;
+    font-size: 25px;
+}
+#date {
+    font-weight: 500;
+    font-size: 18px;
+}
