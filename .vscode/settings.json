@@ -1,5 +1,7 @@
 {
     "cSpell.ignoreWords": [
+        "appid",
+        "openweathermap",
         "tabindex"
     ],
     "liveServer.settings.port": 5501
