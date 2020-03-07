@@ -114,3 +114,53 @@ body {
 #change-button:focus {
     outline: none;
 }
+
+.fa.fa-calendar {
+    position: absolute;
+    right: 17rem;
+}
+
+.modal {
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 15rem;
+    
+}
+.modal .modal-content {
+    background-color: rgb(255, 255, 255);
+}
+.modal-header {
+    border: none;
+}
+.modal-footer {
+    border: none;
+}
+#w-change-btn {
+    background-color: slateblue;
+    margin-top: -2rem;
+    border-radius: 3px;
+    padding: .8rem 3.5rem;
+    outline: 10px solid white;
+}
+#w-change-btn:focus {
+    box-shadow: transparent;
+}
+
+
+.form-control {
+    height: 34px;
+    font-size: 1.6rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+button.close {
+    outline: none;
+    border: none;
+    opacity: 1;
+}
+
