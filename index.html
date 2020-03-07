@@ -35,13 +35,13 @@
 
         <!-- Weather section -->
         <div class="container">
-            <div class="row">
-                <div class="col-8 mx-auto weather">
-                    <div class="weather-head">
-                        <h1 class="text-center display-4 my-4" id="location"><span id="city"></span>, <span id="country"></span></h1>
-                        <div class="row justify-content-center align-items-center">
+            <div class="row ">
+                <div class="col-8 mx-auto weather" >
+                    <div class="weather-head" id="vis">
+                        <h1 class="text-center display-4 my-4" id="location"><span id="city"></span><span id="country"></span></h1>
+                        <div class="row">
                             <div class="col-6 description text-center" >
-                                <i id="icon-desc" class="wi wi-owm-200"></i>
+                                <img src="" id="icon-desc" alt="">
                                 <p id="description"></p>
                             </div>
                             <div class="col-6 temperature text-center">
@@ -72,6 +72,9 @@
                             </div>
                         </div>
                     </div>
+                    <div id="not-found">
+                        <h1 class="display-3 py-3 text-center text-warning">Not Found!!!</h1>
+                    </div>
                 </div>
 
             </div>
@@ -100,7 +103,7 @@
                         <form action="" id="w-form">
                             <div class="form-group">
                                 <!-- <label for="city">City</label> -->
-                                <input type="text" name="" id="city" class="form-control" placeholder="Enter city...">
+                                <input type="text" id="w-city" class="form-control" placeholder="Enter city...">
                             </div>
                         </form>
                     </div>

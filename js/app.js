@@ -21,7 +21,27 @@ getCity().then(data => {
     // country.innerText = data.country;
     const weather = new Weather(data.city);
     weather.getWeather().then(data => {
-        console.log(data)
         ui.display(data)
+    }).catch(err => {
+        console.log(err)
+        ui.notFound();
     });
 });
+
+// change city
+
+document.getElementById("w-change-btn").addEventListener("click", function () {
+    const city = document.getElementById("w-city").value;
+    // console.log(city)
+    if (city === "") {
+        alert("At least type something lazy man 😡😡 ")
+    } else {
+        const weather = new Weather(city);
+        weather.getWeather().then(data => {
+            ui.display(data)
+        }).catch(err => {
+            console.log(err)
+            ui.notFound();
+        });
+    }
+})
