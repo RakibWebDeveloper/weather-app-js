@@ -171,3 +171,11 @@ button.close {
     border-radius: 5px;
 }
 
+
+
+@media screen and (max-width: 980px) {
+    html {
+        box-sizing: border-box;
+        font-size: 50%;
+    }
+}
